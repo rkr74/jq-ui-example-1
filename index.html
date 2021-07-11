@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!--CSS links -->
+    <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>jq-ui-Example</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="bg-dark">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Example-1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Example-2</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input id="tags" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- header -->
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- autocomplete -->
+            <h1>Example:Autocomplete</h1>
+            <div class="ui-widget">
+              <label for="tags">Tags: </label>
+              <input id="tags">
+            <button class="btn btn-primary" type="submit">Submite</button>
+            </div><hr>
+            <!-- autocomplete -->
+            <!-- datepiker -->
+            <h1>Example:datepiker</h1>
+            <p>Date: <input type="text" id="datepicker">&#xA0;
+            <select id="locale">
+              <option value="ar">Arabic (&#x202B;(&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;</option>
+              <option value="zh-TW">Chinese Traditional (&#x7E41;&#x9AD4;&#x4E2D;&#x6587;)</option>
+              <option value="en" selected="selected">English</option>
+              <option value="fr">French (Fran&#xE7;ais)</option>
+              <option value="he">Hebrew (&#x202B;(&#x5E2;&#x5D1;&#x5E8;&#x5D9;&#x5EA;</option>
+            </select></p><hr>
+            <!-- datepiker -->
+            <!-- daigol -->
+            <h1>Example:Dialog</h1>
+            <div id="dialog-form" title="Create new user">
+              <p class="validateTips">All form fields are required.</p>
+             
+              <form>
+                <fieldset>
+                  <label class="diloag_labe" for="name">Name</label>
+                  <input class="inp_diloag" type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
+                  <label class="diloag_labe" for="email">Email</label>
+                  <input class="inp_diloag" type="text" name="email" id="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
+                  <label class="diloag_labe" for="password">Password</label>
+                  <input class="inp_diloag" type="password" name="password" id="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
+             
+                  <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                  <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                </fieldset>
+              </form>
+            </div>
+             
+             
+            <div id="users-contain" class="ui-widget">
+              <h1 class="diloag_h">Existing Users:</h1>
+              <table id="users" class="ui-widget ui-widget-content">
+                <thead>
+                  <tr class="ui-widget-header ">
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>John Doe</td>
+                    <td>john.doe@example.com</td>
+                    <td>johndoe1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button id="create-user">Create new user</button>
+            <!-- daigol --><hr>
+
+            <!-- Progressbar -->
+            <h1>Example:Progressbar</h1>
+            <div id="dialog" title="File Download">
+              <div class="progress-label">Starting download...</div>
+              <div id="progressbar"></div>
+            </div>
+            <button id="downloadButton">Start Download</button>
+            <!-- Progressbar --><hr>
+
+            <!-- spinner -->
+            <h1>Example:Spinner</h1>
+            <p>
+              <label for="spinner">Amount to donate:</label>
+              <input id="spinner" name="spinner" value="5">
+            </p>
+             
+            <p>
+              <label for="currency">Currency to donate</label>
+              <select id="currency" name="currency">
+                <option value="en-US">US $</option>
+                <option value="de-DE">EUR &#x20AC;</option>
+                <option value="ja-JP">YEN &#xA5;</option>
+              </select>
+            </p>
+            <!-- spinner -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--JS links -->
+    <script src="js/jquery.min.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- extra -->
+    <script src="js/jquery-ui-i18n.min.js"></script>
+    <script src="globalize/globalize.min.js"></script>
+    <script src="globalize/globalize.culture.de-DE.min.js"></script>
+    <script src="globalize/globalize.culture.ja-JP.min.js"></script>
+
+  </body>
+</html>
